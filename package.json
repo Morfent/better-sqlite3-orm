@@ -1,0 +1,32 @@
+{
+	"name": "better-sqlite3-orm",
+	"description": "An ORM library for the better-sqlite3 package.",
+	"version": "0.0.1",
+	"license": "BSD-3-Clause",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Morfent/better-sqlite3-orm.git"
+	},
+	"author": {
+		"name": "Ben Davies",
+		"email": "morfentdoge@gmail.com"
+	},
+	"engines": {
+		"node": ">=8.0.0"
+	},
+	"scripts": {
+		"preinstall": "node preinstall_script.js",
+		"prepublish": "gulp build"
+	},
+	"dependencies": {
+		"better-sqlite3": "^3.1.1"
+	},
+	"devDependencies": {
+		"@types/node": "^8.0.10",
+		"gulp": "^3.9.1",
+		"gulp-clean": "^0.3.2",
+		"gulp-typescript": "^3.2.0",
+		"typescript": "^2.5.0-dev.20170712"
+	},
+	"private": true
+}
