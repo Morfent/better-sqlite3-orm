@@ -3,11 +3,11 @@
 const child_process = require('child_process');
 const path = require('path');
 
+const del = require('del');
 const gulp = require('gulp');
-const clean = require('gulp-clean');
 const ts = require('gulp-typescript');
 
-gulp.task('preinstall', () => {
+gulp.task('preinstall', function () {
 	// BSD flavours don't have gcc49 installed by default. better-sqlite3 has it as
 	// a dependency, so rather than force users to troubleshoot, let's tell them
 	// nicely what's up.
@@ -26,13 +26,12 @@ gulp.task('preinstall', () => {
 	}
 });
 
-gulp.task('clean', () => {
-	return gulp.src('dist', {read: false})
-		.pipe(clean());
+gulp.task('clean', function () {
+	return del(['dist']);
 });
 
-gulp.task('build', ['clean'], () => {
+gulp.task('build', ['clean'], function () {
 	const project = ts.createProject('tsconfig.json');
-	const res = gulp.src('lib/**/*').pipe(project());
+	const res = gulp.src('lib/**/*.ts').pipe(project());
 	return res.js.pipe(gulp.dest('dist'));
 });

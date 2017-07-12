@@ -3,9 +3,10 @@
 		"module": "commonjs",
 		"target": "esnext",
 		"outDir": "bin",
-		"noImplicitAny": true
+		"strict": true,
+		"noImplicitAny": true,
+		"types": ["node"]
 	},
-	"types": ["node"],
 	"include": [
 		"lib/**/*"
 	]

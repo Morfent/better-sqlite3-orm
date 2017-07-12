@@ -1,0 +1,3 @@
+test/index.ts
+--reporter min
+--compilers ts-node/register

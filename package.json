@@ -16,16 +16,22 @@
 	},
 	"scripts": {
 		"preinstall": "gulp preinstall",
-		"prepublish": "gulp build"
+		"prepare": "gulp build",
+		"test": "mocha test/index.ts"
 	},
 	"dependencies": {
 		"better-sqlite3": "^3.1.1"
 	},
 	"devDependencies": {
+		"@types/chai": "^4.0.1",
+		"@types/mocha": "^2.2.41",
 		"@types/node": "^8.0.10",
+		"chai": "^4.1.0",
+		"del": "^3.0.0",
 		"gulp": "^3.9.1",
-		"gulp-clean": "^0.3.2",
 		"gulp-typescript": "^3.2.0",
+		"mocha": "^3.4.2",
+		"ts-node": "^3.2.0",
 		"typescript": "^2.5.0-dev.20170712"
 	},
 	"private": true
