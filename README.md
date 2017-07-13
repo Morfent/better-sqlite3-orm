@@ -11,6 +11,15 @@ operations on databases in such a way that you don't need to worry about
 needing to write SQL queries for every single operation, though the option to
 do so will still be available for complex operations.
 
+Installing
+----------
+
+If you are running macOS or any other flavour of BSD, you will need to install
+gcc49 and symlink g++49 to /usr/local/bin/g++ in order to install
+better-sqlite3. If you have a later version installed that's already symlinked
+to there, you can edit ./node_modules/lzz-gyp/lzz-source/Makefile.release and
+change the CC setting to gcc49 to install instead.
+
 TODO
 ----
 

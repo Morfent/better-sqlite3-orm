@@ -15,7 +15,6 @@
 		"node": ">=8.0.0"
 	},
 	"scripts": {
-		"preinstall": "gulp preinstall",
 		"prepare": "gulp build",
 		"test": "mocha test/index.ts"
 	},

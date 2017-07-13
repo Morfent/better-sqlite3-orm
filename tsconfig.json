@@ -5,6 +5,8 @@
 		"outDir": "bin",
 		"strict": true,
 		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"strictNullChecks": true,
 		"types": ["node"]
 	},
 	"include": [
