@@ -1,15 +1,12 @@
-better-sqlite3-orm - An ORM library for better-sqlite3
+sqlite3-boilerplate - a utility API for better-sqlite3
 ======================================================
 
-There are some ORM libraries out there compatible with node-sqlite3, but I much
-prefer better-sqlite3 in comparison. The only problem is writing large projects
-with the package is a hassle without any libraries to abstract common
-operations on databases and tables that would need to be handled either through
-writing raw SQL queries each time you wish to do anything with your databases,
-or through rolling your own abstractions. This aims to abstract common
-operations on databases in such a way that you don't need to worry about
-needing to write SQL queries for every single operation, though the option to
-do so will still be available for complex operations.
+There are ORM packages around for node-sqlite3, but I generally prefer
+better-sqlite3, which is lacking them. When it comes to either package, certain
+tasks like migrating databases between different schemas can be very tedious in
+large projects. This aims to abstract some of that away from developers to
+alleviate some of the repetitive coding otherwise required when working with
+databases in this package.
 
 Installing
 ----------

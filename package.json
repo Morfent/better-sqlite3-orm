@@ -1,11 +1,11 @@
 {
-	"name": "better-sqlite3-orm",
-	"description": "An ORM library for the better-sqlite3 package.",
+	"name": "sqlite3-boilerplate",
+	"description": "A utility API for the better-sqlite3 package",
 	"version": "0.0.1",
 	"license": "BSD-3-Clause",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Morfent/better-sqlite3-orm.git"
+		"url": "https://github.com/Morfent/sqlite3-boilerplate.git"
 	},
 	"author": {
 		"name": "Ben Davies",
